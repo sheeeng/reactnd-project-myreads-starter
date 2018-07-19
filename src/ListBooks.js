@@ -3,7 +3,12 @@ import PropTypes from "prop-types";
 import BooksGrid from "./BooksGrid";
 import { Link } from "react-router-dom";
 
-const ListBooks = ({  booksCurrentlyReading,  booksWantToRead,  booksRead,  onUpdate }) => {
+const ListBooks = ({
+  booksCurrentlyReading,
+  booksWantToRead,
+  booksRead,
+  onUpdate
+}) => {
   return (
     <div className="list-books">
       <div className="list-books-title">
@@ -44,8 +49,8 @@ const ListBooks = ({  booksCurrentlyReading,  booksWantToRead,  booksRead,  onUp
 };
 
 ListBooks.propTypes = {
-  booksCurrentlyReading: PropTypes.array.isRequired,  
-  booksWantToRead: PropTypes.array.isRequired,  
+  booksCurrentlyReading: PropTypes.array.isRequired,
+  booksWantToRead: PropTypes.array.isRequired,
   booksRead: PropTypes.array.isRequired,
   onUpdate: PropTypes.func.isRequired
 };
