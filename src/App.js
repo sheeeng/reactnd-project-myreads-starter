@@ -4,7 +4,7 @@ import "./App.css";
 import ListBooks from "./ListBooks";
 import * as BooksAPI from "./BooksAPI";
 import PropTypes from "prop-types";
-import SeachBooks from "./SeachBooks";
+import SearchBooks from "./SearchBooks";
 
 class BooksApp extends Component {
   state = {
@@ -58,9 +58,9 @@ class BooksApp extends Component {
     return (
       <div className="app">
         <Route
-          path="/seach"
+          path="/search"
           render={({ history }) => (
-            <SeachBooks
+            <SearchBooks
               currentlyReading={this.state.currentlyReading}
               wantToRead={this.state.wantToRead}
               read={this.state.read}

@@ -4,7 +4,7 @@ import { debounce } from "throttle-debounce";
 import BooksGrid from "./BooksGrid";
 import * as BooksAPI from "./BooksAPI";
 
-class SeachBooks extends Component {
+class SearchBooks extends Component {
   constructor() {
     super();
     this.callAjax = debounce(300, this.callAjax);
@@ -15,7 +15,7 @@ class SeachBooks extends Component {
     query: ""
   };
 
-  seachQuery(query) {
+  searchQuery(query) {
     query = query.trim();
     let listBooks = [];
 
@@ -81,7 +81,7 @@ class SeachBooks extends Component {
     this.callAjax(e.target.value);
   }
   callAjax(value) {
-    this.seachQuery(value);
+    this.searchQuery(value);
   }
 
   render() {
@@ -126,4 +126,4 @@ class SeachBooks extends Component {
   }
 }
 
-export default SeachBooks;
+export default SearchBooks;

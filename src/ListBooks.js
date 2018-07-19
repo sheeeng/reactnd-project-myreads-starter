@@ -40,7 +40,7 @@ const ListBooks = ({
       </div>
 
       <div className="open-search">
-        <Link to="/seach" className="open-search">
+        <Link to="/search" className="open-search">
           Add a book
         </Link>
       </div>
