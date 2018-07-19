@@ -78,24 +78,26 @@ body, .app {
   background: #e9e;
 }
 .search-books-bar input {
-  width: 100%;
-  padding: 15px 10px;
+  background: lightyellow;
+  width: 16em;
+  padding: 16px 16px;
   font-size: 1.25em;
   border: none;
   outline: none;
 }
 
 .close-search {
+  padding: 24px 24px;
   display: block;
-  top: 20px;
-  left: 15px;
-  width: 50px;
-  height: 53px;
-  background: white;
+  top: 8px;
+  left: 8px;
+  width: 56px;
+  height: 56px;
+  background: lightcyan;
   background-image: url('./icons/arrow-back.svg');
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 28px;
+  background-size: 32px;
   font-size: 0;
 }
 

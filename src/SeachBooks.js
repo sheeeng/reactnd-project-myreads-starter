@@ -108,7 +108,7 @@ class SeachBooks extends Component {
                             */}
                   <input
                     type="text"
-                    placeholder="Search by title or author"
+                    placeholder="Search by title or author...."
                     onKeyUp={this.searchChange.bind(this)}
                   />
                   <BooksGrid books={this.state.books} onUpdate={onUpdate} />
