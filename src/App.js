@@ -64,7 +64,7 @@ class BooksApp extends Component {
               currentlyReading={this.state.currentlyReading}
               wantToRead={this.state.wantToRead}
               read={this.state.read}
-              onCloseSeach={() => {
+              onCloseSearch={() => {
                 history.push("/");
               }}
               onUpdate={(book, shelf) => {

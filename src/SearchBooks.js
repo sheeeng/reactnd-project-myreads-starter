@@ -54,7 +54,7 @@ class SearchBooks extends Component {
 
   static propTypes = {
     showSearchPage: PropTypes.string,
-    onCloseSeach: PropTypes.func.isRequired,
+    onCloseSearch: PropTypes.func.isRequired,
     onUpdate: PropTypes.func.isRequired
   };
 
@@ -85,7 +85,7 @@ class SearchBooks extends Component {
   }
 
   render() {
-    const { onCloseSeach, onUpdate } = this.props;
+    const { onCloseSearch, onUpdate } = this.props;
 
     return (
       <div className="list-books">
@@ -93,7 +93,7 @@ class SearchBooks extends Component {
           <div>
             <div className="search-books">
               <div className="search-books-bar">
-                <a className="close-search" onClick={() => onCloseSeach(false)}>
+                <a className="close-search" onClick={() => onCloseSearch(false)}>
                   Close
                 </a>
 

@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "@types/prop-types": "^15.5.3",
     "@types/react-dom": "^16.0.6",
     "escape-string-regexp": "^1.0.5",
     "form-serialize": "^0.7.2",
